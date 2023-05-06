@@ -36,7 +36,9 @@ function Form() {
     };
     tg.showAlert('😊Спасибо за покупку! В ближайшее время наш оператор свяжется с Вами.');
 
-    const sendData = axios.post('https://kvartirabar.uz/order', data).then((res) => onClose());
+    const sendData = axios
+      .post('https://103-54-56-168.cloud-xip.com/order', data)
+      .then((res) => onClose());
     // onClose();
   }, [address, comment, onClose, order, tg, user.id]);
 
